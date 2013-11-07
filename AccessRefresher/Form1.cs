@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
+using NetOffice.AccessApi;
+using Form = System.Windows.Forms.Form;
 
 namespace AccessRefresher
 {
@@ -15,16 +16,18 @@ namespace AccessRefresher
          * 
          */
 
-        private Access GetInstance(int hWndChild)
+        private AccessObject GetInstance(int hWndChild)
         {
             if (hWndChild != 0)
             {
+                
                 // OBJID_NATIVEOM gets us a pointer to the native 
                 // object model.
                 uint OBJID_NATIVEOM = 0xFFFFFFF0;
                 Guid IID_IDispatch =
                     new Guid("{00020400-0000-0000-C000-000000000046}");
-                Access.DocumentWindow ptr = null;
+                
+                AccessApi.DocumentWindow ptr = null;
                 int hr = Util.WinApi.AccessibleObjectFromWindow(
                     hWndChild, OBJID_NATIVEOM,
                     IID_IDispatch.ToByteArray(), ref ptr);

@@ -33,8 +33,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AccessApi">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\AccessApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="AutoUpdater.NET">
       <HintPath>..\..\DevLibraries\AutoUpdater.NET 1.2\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="DAOApi">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\DAOApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MSComctlLibApi">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\MSComctlLibApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MSDATASRCApi">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\MSDATASRCApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NetOffice">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\NetOffice.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OfficeApi">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\OfficeApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OWC10Api">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\OWC10Api.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +73,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="VBIDEApi">
+      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\VBIDEApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
