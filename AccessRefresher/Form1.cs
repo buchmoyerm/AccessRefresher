@@ -1,5 +1,4 @@
 ﻿using System;
-using NetOffice.AccessApi;
 using Form = System.Windows.Forms.Form;
 
 namespace AccessRefresher
@@ -16,7 +15,7 @@ namespace AccessRefresher
          * 
          */
 
-        private AccessObject GetInstance(int hWndChild)
+        private NetOffice.AccessApi.Application GetInstance(int hWndChild)
         {
             if (hWndChild != 0)
             {
@@ -27,7 +26,7 @@ namespace AccessRefresher
                 Guid IID_IDispatch =
                     new Guid("{00020400-0000-0000-C000-000000000046}");
                 
-                AccessApi.DocumentWindow ptr = null;
+                NetOffice.AccessApi.Application.DocumentWindow ptr = null;
                 int hr = Util.WinApi.AccessibleObjectFromWindow(
                     hWndChild, OBJID_NATIVEOM,
                     IID_IDispatch.ToByteArray(), ref ptr);
