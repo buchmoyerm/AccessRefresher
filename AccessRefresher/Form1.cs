@@ -12,6 +12,7 @@ namespace AccessRefresher
 
         /* from
          * http://stackoverflow.com/questions/1096896/how-do-you-access-an-already-running-com-object-using-net-interop
+         * 
          */
 
         private Access GetInstance(int hWndChild)
