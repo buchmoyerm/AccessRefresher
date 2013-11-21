@@ -12,16 +12,21 @@ namespace AccessRefresher
             InitializeComponent();
         }
 
-        private NetOffice.AccessApi.Application GetApp()
+        private NetOffice.AccessApi.Application GetApp(string accessFile)
         {
-            return new NetOffice.AccessApi.Application((NetOffice.AccessApi.Application)System.Runtime.InteropServices.Marshal.BindToMoniker(""));
+            try
+            {
+                return new NetOffice.AccessApi.Application(accessFile);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
-        private void pictureBox1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
-            var img = pictureBox1.Image;
-            if (img == null) return;
-            DoDragDrop(img, DragDropEffects.None);
+            var f = GetApp(txtAccessFile.Text);
         }
 
         /* from

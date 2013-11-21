@@ -117,49 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcI
-        CQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwM
-        DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAB4AF4DASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiivB/+ChP
-        /BSD4V/8EyfgZN47+KOtPZ2rv5Gm6XZqs2qa3PjPk20JZdxA5LMVRByzLxQB7xRX476L/wAHNn7QHxC0
-        uHW/Bf8AwTm+O3irwpqQ87StXtrjUni1CAn5ZVMWjyx4P+xI4/2jUl7/AMHO/wAavhpB/bPxM/4J6/Hr
-        wL4LtCDqOtSPfutkn97FxpdvEfo0yfWgD9hKK+Fv2Uf+DkP9kD9rnUtH0rSvilB4T8S6yMR6P4ssZtIl
-        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
-</value>
-  </data>
 </root>

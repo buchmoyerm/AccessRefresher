@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{919B0C6D-D2B2-44C7-8035-1F987C92FBAC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -34,34 +34,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AccessApi">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\AccessApi.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\AccessApi.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="AutoUpdater.NET">
-      <HintPath>..\..\DevLibraries\AutoUpdater.NET 1.2\AutoUpdater.NET.dll</HintPath>
+      <HintPath>..\..\Library\AutoUpdater.NET 1.2\AutoUpdater.NET.dll</HintPath>
     </Reference>
     <Reference Include="DAOApi">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\DAOApi.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\DAOApi.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MSComctlLibApi">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\MSComctlLibApi.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\MSComctlLibApi.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MSDATASRCApi">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\MSDATASRCApi.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\MSDATASRCApi.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="NetOffice">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\NetOffice.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\NetOffice.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="OfficeApi">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\OfficeApi.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\OfficeApi.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="OWC10Api">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\OWC10Api.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\OWC10Api.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -74,7 +74,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="VBIDEApi">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\VBIDEApi.dll</HintPath>
+      <HintPath>..\..\Library\NetOffice 1.6.0\NetOffice 1.6.0\NET 3.5\Assemblies\Any CPU\VBIDEApi.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
