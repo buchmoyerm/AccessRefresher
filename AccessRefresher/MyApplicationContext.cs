@@ -19,7 +19,8 @@ namespace AccessRefresher
 
         private void ShowConfig(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var f = new Form1();
+            f.Show();
         }
 
         private void Exit(object sender, EventArgs e)
