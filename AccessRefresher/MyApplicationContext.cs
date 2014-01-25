@@ -8,7 +8,7 @@ namespace AccessRefresher
         private NotifyIcon notifyIcon;
         public MyApplicationContext()
         {
-            MenuItem configMenuItem = new MenuItem("Configuration", new EventHandler(ShowConfig));
+            MenuItem configMenuItem = new MenuItem("Add Event", new EventHandler(ShowAddEvent));
             MenuItem exitMenuItem = new MenuItem("Exit", new EventHandler(Exit));
 
             notifyIcon = new NotifyIcon();
@@ -17,10 +17,10 @@ namespace AccessRefresher
             notifyIcon.Visible = true;
         }
 
-        private void ShowConfig(object sender, EventArgs e)
+        private void ShowAddEvent(object sender, EventArgs e)
         {
-            var f = new Form1();
-            f.Show();
+            var w = new AddEventForm();
+            w.ShowDialog();
         }
 
         private void Exit(object sender, EventArgs e)
