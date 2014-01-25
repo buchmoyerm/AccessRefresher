@@ -19,7 +19,7 @@ namespace AccessRefresher
 
         private void ShowAddEvent(object sender, EventArgs e)
         {
-            var w = new AddEventForm();
+            var w = new EditEventForm();
             w.ShowDialog();
         }
 

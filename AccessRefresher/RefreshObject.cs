@@ -16,14 +16,17 @@ namespace AccessRefresher
         private Access.Application _fromDb;
         private Excel.Application _toExcel;
 
-        public RefreshObject(string dbFile, string excelFile, int refreshInterval)
+        public RefreshObject(string name, string dbFile, string excelFile, int refreshInterval)
         {
+            Name = name;
             _fromDbFile = dbFile;
             _toExcelFile = excelFile;
             _refreshInterval = refreshInterval;
 
             OnRefresh();
         }
+
+        public string Name { get; private set; }
 
         private void OnRefresh()
         {
