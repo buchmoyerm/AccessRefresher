@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
+using System.Data.OleDb;
 using Form = System.Windows.Forms.Form;
+using Dapper;
 
 namespace AccessRefresher
 {
@@ -52,7 +54,12 @@ namespace AccessRefresher
         private void SetAccessFile(string file)
         {
             _accessFile = file;
-            var l = GetAccessTableList();
+            SetTableList(;GetAccessTableList());
+        }
+
+        private void SetTableList(List<string> tables)
+        {
+            
         }
 
         //use a micro ORM
@@ -68,22 +75,16 @@ namespace AccessRefresher
                 return tableList;
             }
 
-            // Microsoft Access provider factory
-            DbProviderFactory factory = DbProviderFactories.GetFactory("System.Data.OleDb");
-
+            var ConnStr = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};",_accessFile);
+            string[] restrictions = new string[4];
+            restrictions[3] = "Table";
             DataTable userTables = null;
-            using (DbConnection connection = factory.CreateConnection())
+
+            using (OleDbConnection MyConn = new OleDbConnection(ConnStr))
             {
-                // c:\test\test.mdb
-                connection.ConnectionString = string.Format("Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0}",_accessFile);
-                // We only want user tables, not system tables
-                string[] restrictions = new string[4];
-                restrictions[3] = "Table";
+                MyConn.Open();
 
-                connection.Open();
-
-                // Get list of user tables
-                userTables = connection.GetSchema("Tables", restrictions);
+                userTables = MyConn.GetSchema("Tables", restrictions);
             }
 
             for (int i = 0; i < userTables.Rows.Count; i++)

@@ -42,14 +42,24 @@
     <Reference Include="AutoUpdater.NET">
       <HintPath>..\..\DevLibraries\AutoUpdater.NET 1.2\AutoUpdater.NET.dll</HintPath>
     </Reference>
-    <Reference Include="ExcelApi">
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 4.0\Assemblies\Any CPU\ExcelApi.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
+    <Reference Include="Dapper">
+      <HintPath>..\packages\Dapper.1.13\lib\net40\Dapper.dll</HintPath>
     </Reference>
-    <Reference Include="NetOffice, Version=1.6.0.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ExcelApi, Version=1.6.0.0, Culture=neutral, PublicKeyToken=9084b9221296229e, processorArchitecture=MSIL">
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>..\..\DevLibraries\NetOffice 1.6.0\NetOffice 1.6.0\NET 4.0\Assemblies\Any CPU\NetOffice.dll</HintPath>
+      <Private>True</Private>
+      <HintPath>..\packages\NetOffice.Excel.Net40.1.6.0.0\lib\net40\ExcelApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NetOffice, Version=1.6.0.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+      <HintPath>..\packages\NetOffice.Core.Net40.1.6.0.0\lib\net40\NetOffice.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeApi, Version=1.6.0.0, Culture=neutral, PublicKeyToken=a39beb0835c43c8e, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+      <HintPath>..\packages\NetOffice.Core.Net40.1.6.0.0\lib\net40\OfficeApi.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,6 +67,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="VBIDEApi, Version=1.6.0.0, Culture=neutral, PublicKeyToken=931cec8882205047, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+      <HintPath>..\packages\NetOffice.Core.Net40.1.6.0.0\lib\net40\VBIDEApi.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EditEventForm.cs">
@@ -85,6 +100,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
